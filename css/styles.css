@@ -1,15 +1,28 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fill, 250px);
     gap: 5px;
+    justify-content: center;
 }
 
 .item {
     border-radius: 5px;
-    padding: 10px;
+    padding: 7px;
     background: #F2F2F2;
 }
 
 .item img {
     max-width: 100%;
+}
+
+.level1 {
+    grid-row-end: span 2;
+}
+
+.level2 {
+    grid-row-end: span 3;
+}
+
+.level3 {
+    grid-row-end: span 1;
 }
